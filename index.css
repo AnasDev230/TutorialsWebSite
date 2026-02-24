@@ -1,0 +1,232 @@
+/* ===== Y2K MINIMAL / 90s SOFT PALETTE ===== */
+/* ألوان هادئة ومريحة للعين مع الحفاظ على الطابع الرجعي */
+
+body {
+  background: #2c3e50 !important;  /* أزرق داكن هادئ */
+  background-image: radial-gradient(circle at 30% 70%, #5d6d7e 0%, #1a2634 150%) !important;
+  font-family: 'Courier New', 'Lucida Console', monospace !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Y2K box style - ألوان باستيل ناعمة */
+.y2k-box {
+  border: 2px solid #7f8c8d !important;
+  box-shadow: 5px 5px 0px #95a5a6, -3px -3px 0px #bdc3c7 !important;
+  background: #f5f5f0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.y2k-box:hover {
+  box-shadow: 7px 7px 0px #7f8c8d, -4px -4px 0px #aab7b8 !important;
+  border-color: #5d6d7e !important;
+  background: #fafaf5 !important;
+}
+
+/* Marquee animation - ألوان باستيل */
+.marquee-2k {
+  background: linear-gradient(90deg, #f2d7d5, #d4e6f1, #d5f0db, #f9e79f) !important;
+  background-size: 400% 100% !important;
+  color: #2c3e50 !important;
+  font-weight: bold !important;
+  text-shadow: 1px 1px 0 #ffffff !important;
+  border-top: 2px dotted #aab7b8 !important;
+  border-bottom: 2px dotted #aab7b8 !important;
+  animation: marquee-bg 8s infinite alternate !important;
+}
+
+@keyframes marquee-bg {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Blinking text - لون هادئ */
+.blink-2k {
+  animation: blinker 2s step-start infinite !important;
+  color: #c44545 !important;  /* أحمر هادئ */
+}
+
+@keyframes blinker {
+  50% { opacity: 0.5; }
+}
+
+/* Visitor counter - محاكاة شاشة LCD قديمة */
+.visitors {
+  background: #34495e !important;
+  color: #a3e4d7 !important;  /* أخضر فاتح */
+  font-family: "Courier New", monospace !important;
+  padding: 0.2rem 0.5rem !important;
+  border: 2px inset #7f8c8d !important;
+  letter-spacing: 2px !important;
+}
+
+/* Cool horizontal rule */
+hr.cool {
+  border: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, #c44545, #3b5998, #27ae60, #f39c12) !important;
+  opacity: 0.7 !important;
+}
+
+/* Custom cursor - شكل بسيط */
+.cursor-2k {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="2,2 18,2 10,16" fill="%23333" stroke="%23777" stroke-width="1"/></svg>') 10 2, auto !important;
+}
+
+/* Language panel */
+.lang-panel {
+  background: #e8e8e0 !important;
+  border: 2px inset #b0b0b0 !important;
+  border-color: #f0f0f0 #909090 #909090 #f0f0f0 !important;
+}
+
+/* Language buttons - ألوان باستيل */
+.lang-btn {
+  background: #d0d0c8;
+  border: 2px outset #f0f0f0;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2c3e50;
+  box-shadow: 2px 2px 0px #909090;
+  transition: all 0.1s linear;
+  font-size: 1.2rem;
+}
+
+.lang-btn:hover {
+  background: #c0c0b0 !important;
+  border: 2px inset #a0a0a0 !important;
+  color: #1a2634 !important;
+  transform: scale(0.99) !important;
+}
+
+.lang-btn.active-concept {
+  background: #b0b0a0;
+  border: 2px inset #808080;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Under construction style */
+.under-cons {
+  border: 2px double #95a5a6;
+  background: #f5f5f0;
+  color: #5d6d7e;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* خلفيات البطاقات - باستيل */
+.bg-\[#b3d9ff\] {
+  background-color: #d4e6f1 !important;  /* أزرق فاتح */
+}
+
+.bg-\[#ffcc99\] {
+  background-color: #fdebd0 !important;  /* بيج فاتح */
+}
+
+.bg-\[#ddb5f0\] {
+  background-color: #ebdef0 !important;  /* خزامي فاتح */
+}
+
+.bg-\[#e0e0ff\] {
+  background-color: #d4e6f1 !important;  /* أزرق فاتح */
+}
+
+.bg-\[#ccffcc\] {
+  background-color: #d5f0db !important;  /* أخضر فاتح */
+}
+
+/* تحسين ألوان البطاقات الصغيرة */
+.bg-amber-200 {
+  background-color: #fcf3cf !important;
+}
+
+.bg-lime-200 {
+  background-color: #e9f7e1 !important;
+}
+
+.bg-cyan-200 {
+  background-color: #d1f2eb !important;
+}
+
+.bg-pink-200 {
+  background-color: #fadbd8 !important;
+}
+
+/* ألوان النصوص */
+.text-blue-800 {
+  color: #2874a6 !important;
+}
+
+.text-purple-900 {
+  color: #76448a !important;
+}
+
+.text-red-700 {
+  color: #b03a2e !important;
+}
+
+.text-green-800 {
+  color: #1e6f5c !important;
+}
+
+/* خلفيات مربعات المستويات */
+.bg-blue-600, .bg-green-600, .bg-purple-600, .bg-red-600 {
+  background-color: #5d6d7e !important;
+  border-color: #b0b0b0 !important;
+}
+
+/* تنسيق شريط التمرير */
+.concept-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.concept-list::-webkit-scrollbar-track {
+  background: #e0e0d8;
+  border: 1px inset #b0b0b0;
+}
+
+.concept-list::-webkit-scrollbar-thumb {
+  background: #909090;
+  border: 1px outset #c0c0c0;
+}
+
+/* تحسين ألوان الفوتر */
+.bg-\[#d0d0d0\] {
+  background-color: #e0e0d8 !important;
+}
+
+.bg-black {
+  background-color: #34495e !important;
+}
+
+.text-lime-300 {
+  color: #a3e4d7 !important;
+}
+
+/* ألوان الحدود */
+.border-fuchsia-500 {
+  border-color: #bb8fce !important;
+}
+
+.border-green-500 {
+  border-color: #7dcea0 !important;
+}
+
+.border-blue-500 {
+  border-color: #85c1e9 !important;
+}
+
+.border-yellow-400 {
+  border-color: #f7dc6f !important;
+}
+
+.border-purple-500 {
+  border-color: #c39bd3 !important;
+}
+
+.border-red-500 {
+  border-color: #e6b0aa !important;
+}

@@ -1,0 +1,274 @@
+/* ===== Y2K MINIMAL / 90s SOFT PALETTE ===== */
+/* ألوان هادئة ومريحة للعين مع الحفاظ على الطابع الرجعي */
+
+body {
+  background: #2c3e50 !important;
+  background-image: radial-gradient(circle at 30% 70%, #5d6d7e 0%, #1a2634 150%) !important;
+  font-family: 'Courier New', 'Lucida Console', monospace !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Y2K box style */
+.y2k-box {
+  border: 2px solid #7f8c8d !important;
+  box-shadow: 5px 5px 0px #95a5a6, -3px -3px 0px #bdc3c7 !important;
+  background: #f5f5f0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.y2k-box:hover {
+  box-shadow: 7px 7px 0px #7f8c8d, -4px -4px 0px #aab7b8 !important;
+  border-color: #5d6d7e !important;
+  background: #fafaf5 !important;
+}
+
+/* Marquee animation */
+.marquee-2k {
+  background: linear-gradient(90deg, #f2d7d5, #d4e6f1, #d5f0db, #f9e79f) !important;
+  background-size: 400% 100% !important;
+  color: #2c3e50 !important;
+  font-weight: bold !important;
+  text-shadow: 1px 1px 0 #ffffff !important;
+  border-top: 2px dotted #aab7b8 !important;
+  border-bottom: 2px dotted #aab7b8 !important;
+  animation: marquee-bg 8s infinite alternate !important;
+}
+
+@keyframes marquee-bg {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Blinking text */
+.blink-2k {
+  animation: blinker 2s step-start infinite !important;
+  color: #c44545 !important;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.5; }
+}
+
+/* Visitor counter */
+.visitors {
+  background: #34495e !important;
+  color: #a3e4d7 !important;
+  font-family: "Courier New", monospace !important;
+  padding: 0.2rem 0.5rem !important;
+  border: 2px inset #7f8c8d !important;
+  letter-spacing: 2px !important;
+}
+
+hr.cool {
+  border: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, #c44545, #3b5998, #27ae60, #f39c12) !important;
+  opacity: 0.7 !important;
+}
+
+/* Custom cursor */
+.cursor-2k {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="2,2 18,2 10,16" fill="%23333" stroke="%23777" stroke-width="1"/></svg>') 10 2, auto !important;
+}
+
+/* Concept panel */
+.concept-panel {
+  background: #e8e8e0 !important;
+  border: 2px inset #b0b0b0 !important;
+  border-color: #f0f0f0 #909090 #909090 #f0f0f0 !important;
+}
+
+/* Concept buttons */
+.concept-btn {
+  background: #d0d0c8;
+  border: 2px outset #f0f0f0;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  color: #2c3e50;
+  box-shadow: 2px 2px 0px #909090;
+  transition: all 0.1s linear;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.concept-btn:hover {
+  background: #c0c0b0 !important;
+  border: 2px inset #a0a0a0 !important;
+  color: #1a2634 !important;
+  transform: scale(0.99) !important;
+}
+
+.concept-btn.active-concept {
+  background: #b0b0a0;
+  border: 2px inset #808080;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Content display -像个 compiler */
+.concept-content {
+  background: #1e1e1e !important;  /* خلفية داكنة مثل الـ IDE */
+  border: 3px ridge #7f8c8d !important;
+  box-shadow: 6px 6px 0px #5d6d7e, -3px -3px 0px #95a5a6 !important;
+  padding: 1.5rem;
+  min-height: 550px;
+  max-height: 650px;
+  overflow-y: auto;
+  color: #d4d4d4 !important;  /* نص فاتح */
+  font-family: 'Consolas', 'Courier New', monospace !important;
+}
+
+/* تنسيق عنوان المفهوم */
+#conceptTitle {
+  color: #f9e571 !important;
+  border-bottom: 2px solid #7f8c8d;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #1a2634;
+}
+
+/* Code block - يشبه compiler حقيقي */
+.code-block {
+  background: #0a0a0a !important;
+  color: #00ff99 !important;
+  padding: 1.2rem !important;
+  border: 1px solid #7f8c8d !important;
+  font-family: 'Consolas', 'Courier New', monospace !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  overflow-x: auto !important;
+  margin: 1rem 0 !important;
+  border-radius: 0 !important;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5) !important;
+  counter-reset: line !important;
+}
+
+/* ترقيم الأسطر */
+.code-block pre {
+  margin: 0 !important;
+  padding: 0 !important;
+  counter-reset: line;
+}
+
+.code-block .line {
+  counter-increment: line;
+  padding-left: 3rem !important;
+  position: relative;
+}
+
+.code-block .line::before {
+  content: counter(line);
+  position: absolute;
+  left: 0;
+  color: #666;
+  width: 2rem;
+  text-align: right;
+  padding-right: 0.5rem;
+  border-right: 1px solid #333;
+}
+
+/* تلوين الكود */
+.code-block .keyword { color: #569cd6; }
+.code-block .type { color: #4ec9b0; }
+.code-block .string { color: #ce9178; }
+.code-block .comment { color: #6a9955; }
+.code-block .number { color: #b5cea8; }
+.code-block .function { color: #dcdcaa; }
+
+/* Under construction */
+.under-cons {
+  border: 2px double #95a5a6;
+  background: #f5f5f0;
+  color: #5d6d7e;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* Level headers */
+.level-header {
+  background: #f0e5d8 !important;
+  border: 1px solid #7f8c8d !important;
+  color: #2c3e50 !important;
+  font-weight: bold;
+  padding: 0.3rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+/* تنسيق شريط التمرير */
+.concept-list {
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: 0.3rem;
+}
+
+.concept-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.concept-list::-webkit-scrollbar-track {
+  background: #e0e0d8;
+  border: 1px inset #b0b0b0;
+}
+
+.concept-list::-webkit-scrollbar-thumb {
+  background: #909090;
+  border: 1px outset #c0c0c0;
+}
+
+/* تنسيق الـ footer */
+.bg-\[#d0d0d0\] {
+  background-color: #e0e0d8 !important;
+}
+
+.bg-black {
+  background-color: #34495e !important;
+}
+
+.text-lime-300 {
+  color: #a3e4d7 !important;
+}
+
+/* Badges في الأسفل */
+.badge-row {
+  background: #e0e0d8 !important;
+  border: 2px outset #b0b0b0 !important;
+}
+
+/* تنسيق النصوص في المحتوى */
+#conceptExplanation p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #d4d4d4;
+}
+
+#conceptExplanation ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  color: #d4d4d4;
+}
+
+#conceptExplanation li {
+  margin-bottom: 0.3rem;
+}
+
+#conceptExplanation strong {
+  color: #f9e571;
+}
+
+#conceptExplanation .note {
+  background: #2d2d2d;
+  border-left: 4px solid #f9e571;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}

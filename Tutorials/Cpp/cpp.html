@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚡ C++ COMPLETE REFERENCE ⚡</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="cpp-style.css">
+</head>
+<body class="cursor-2k p-3 md:p-5 flex justify-center items-start min-h-screen">
+
+  <main class="max-w-6xl w-full bg-[#c0c0c0] p-5 border-8 border-gray-400"
+        style="border-style: ridge; border-color: #ffffcc #6a6a6a #6a6a6a #ffffcc;">
+
+    <!-- HEADER -->
+    <header class="text-center mb-6">
+      <h1 class="text-5xl md:text-7xl font-black italic tracking-widest drop-shadow-2xl"
+          style="text-shadow: 5px 5px 0 #ff00ff, 7px 7px 0 #00ffff; color: #f9e571;">
+        ⚙️ C++ COMPLETE REFERENCE ⚙️
+      </h1>
+      <div class="marquee-2k py-2 px-4 my-4 text-2xl md:text-3xl font-mono flex flex-wrap justify-center gap-4">
+        <span>💾</span> <span class="blink-2k">BASICS • OOP • STL • MODERN</span> <span>💾</span>
+      </div>
+      <div class="visitors inline-block text-2xl mx-auto">
+        <span>🕹️ 20+ CONCEPTS • CODE EXAMPLES 🕹️</span>
+      </div>
+      <hr class="cool mt-4">
+    </header>
+
+    <!-- 2-COLUMN LAYOUT -->
+    <div class="flex flex-wrap lg:flex-nowrap gap-8">
+      
+      <!-- LEFT SIDE: CONTENT DISPLAY (مثل compiler) -->
+      <section class="w-full lg:w-2/3 xl:w-3/4">
+        <div class="concept-content" id="conceptDisplay">
+          <h2 id="conceptTitle">📌 INTRODUCTION TO C++</h2>
+          <div id="conceptExplanation">
+            <!-- المحتوى سيتم تعبئته بواسطة JavaScript -->
+          </div>
+        </div>
+
+        <div class="mt-4 under-cons text-center text-lg p-2">
+          <span>📘 CLICK ANY CONCEPT • CODE WITH STYLE 📘</span>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDE: LIST OF CONCEPTS -->
+      <aside class="w-full lg:w-1/3 xl:w-1/4">
+        <div class="concept-panel p-4 y2k-box bg-[#aaaaaa] border-8 border-gray-500">
+          <h2 class="text-3xl font-extrabold text-indigo-900 underline decoration-wavy decoration-pink-400 mb-4 text-center">
+            📋 C++ CONCEPTS
+          </h2>
+          <p class="text-black mb-2 text-lg border-b-2 border-black pb-1">select topic ↓</p>
+
+          <div class="concept-list mt-2">
+            <!-- المستوى 1: Basics -->
+            <div class="level-header text-center">🔰 LEVEL 1: BASICS</div>
+            
+            <button class="concept-btn" data-concept="intro"><span>📌</span> 1. Introduction</button>
+            <button class="concept-btn" data-concept="datatypes"><span>📊</span> 2. Data Types</button>
+            <button class="concept-btn" data-concept="variables"><span>📦</span> 3. Variables</button>
+            <button class="concept-btn" data-concept="operators"><span>➕</span> 4. Operators</button>
+            <button class="concept-btn" data-concept="io"><span>📝</span> 5. I/O Streams</button>
+            <button class="concept-btn" data-concept="control"><span>🎮</span> 6. Control Flow</button>
+            <button class="concept-btn" data-concept="loops"><span>🔄</span> 7. Loops</button>
+            <button class="concept-btn" data-concept="arrays"><span>📋</span> 8. Arrays</button>
+            <button class="concept-btn" data-concept="strings"><span>📎</span> 9. Strings</button>
+            <button class="concept-btn" data-concept="functions"><span>⚙️</span> 10. Functions</button>
+
+            <!-- المستوى 2: Advanced -->
+            <div class="level-header text-center mt-3">⚡ LEVEL 2: ADVANCED</div>
+            
+            <button class="concept-btn" data-concept="pointers"><span>👉</span> 11. Pointers</button>
+            <button class="concept-btn" data-concept="references"><span>🔗</span> 12. References</button>
+            <button class="concept-btn" data-concept="dynamic"><span>💾</span> 13. Dynamic Memory</button>
+
+            <!-- المستوى 3: OOP -->
+            <div class="level-header text-center mt-3">🎯 LEVEL 3: OOP</div>
+            
+            <button class="concept-btn" data-concept="classes"><span>🏷️</span> 14. Classes & Objects</button>
+            <button class="concept-btn" data-concept="inheritance"><span>🌳</span> 15. Inheritance</button>
+            <button class="concept-btn" data-concept="polymorphism"><span>🔄</span> 16. Polymorphism</button>
+
+            <!-- المستوى 4: Modern C++ -->
+            <div class="level-header text-center mt-3">🚀 LEVEL 4: MODERN C++</div>
+            
+            <button class="concept-btn" data-concept="templates"><span>⚙️</span> 17. Templates</button>
+            <button class="concept-btn" data-concept="stl"><span>📦</span> 18. STL Containers</button>
+            <button class="concept-btn" data-concept="exceptions"><span>⚠️</span> 19. Exceptions</button>
+            <button class="concept-btn" data-concept="lambda"><span>λ</span> 20. Lambdas</button>
+            <button class="concept-btn" data-concept="smart"><span>🧠</span> 21. Smart Pointers</button>
+          </div>
+
+          <div class="mt-4 text-center under-cons text-sm p-1">
+            <span>🔍 CLICK ANY CONCEPT → CODE EXAMPLES</span>
+          </div>
+        </div>
+
+        <div class="y2k-box mt-6 p-3 bg-[#ccffcc] border-4 border-blue-700 hidden lg:block">
+          <span class="text-2xl block">💡 DID YOU KNOW?</span>
+          <div class="flex gap-2 text-lg">
+            <span class="blink-2k">⚡</span><span>C++20 added concepts, ranges, and coroutines!</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <hr class="cool mt-8">
+    <footer class="mt-6 flex flex-col md:flex-row flex-wrap gap-4 justify-between items-center text-black text-xl border-t-4 border-double border-black pt-5 bg-[#d0d0d0] px-4 pb-4">
+      <div class="flex gap-3">
+        <span class="bg-white p-2 border-4 border-black">📟</span>
+        <span class="font-mono visitors text-2xl">C++98 • C++11 • C++20</span>
+      </div>
+      <div class="flex gap-3">
+        <span class="text-3xl">© 2025</span>
+        <span class="bg-black text-lime-300 p-2 border-4 border-white font-black">CPP COMPLETE</span>
+        <span class="text-3xl">🗂️</span>
+      </div>
+      <div class="flex gap-2">
+        <span class="bg-purple-300 p-2 border-4 inset border-black">📧 LEARN@CPP.COM</span>
+      </div>
+    </footer>
+
+    <!-- Badge row -->
+    <div class="badge-row flex flex-wrap justify-center gap-5 mt-4 text-lg p-3 border-8 border-gray-500 border-outset">
+      <span class="border-4 border-red-500 bg-yellow-200 p-1">📚 20+ C++ CONCEPTS</span>
+      <span class="border-4 border-green-500 bg-black text-white p-1">CODE EXAMPLES</span>
+      <span class="border-4 border-blue-500 bg-cyan-200 p-1">COMPILER STYLE</span>
+      <span class="border-4 border-purple-500 bg-pink-200 p-1">⚡ FREE ⚡</span>
+    </div>
+  </main>
+
+  <!-- Load concept data -->
+  <script src="cpp-concepts.js"></script>
+  
+  <script>
+    (function() {
+      const displayTitle = document.getElementById('conceptTitle');
+      const displayExplanation = document.getElementById('conceptExplanation');
+      const conceptButtons = document.querySelectorAll('.concept-btn');
+
+      function showConcept(conceptKey) {
+        const data = conceptData[conceptKey];
+        if (!data) return;
+        
+        displayTitle.innerText = data.title;
+        displayExplanation.innerHTML = data.body;
+
+        conceptButtons.forEach(btn => btn.classList.remove('active-concept'));
+        const activeBtn = Array.from(conceptButtons).find(btn => btn.dataset.concept === conceptKey);
+        if (activeBtn) activeBtn.classList.add('active-concept');
+      }
+
+      conceptButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          const concept = this.dataset.concept;
+          showConcept(concept);
+        });
+      });
+
+      // Show intro by default
+      showConcept('intro');
+    })();
+  </script>
+</body>
+</html>
